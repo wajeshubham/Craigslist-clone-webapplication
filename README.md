@@ -1,2 +1,2 @@
 # craigslist-clone-webapplication
-clone webapplication of craigslist using django, hosted by heroku
+clone webapplication of craigslist using django, hosted on heroku
