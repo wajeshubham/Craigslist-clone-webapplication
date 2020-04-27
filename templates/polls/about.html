@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="container nav_wrapper">
+            <a href="/" class="brand-logo">Cluster</a>
+            <ul id="nav_mobile" class="right">
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <h2>About</h2>
+        <p>Cluster is the clone website of Craigslist by using django web framework.
+            To make a website on Django you should have enough knowledge about Python
+            (as django is a python based web framework), little bit of http and css stylsheets.</p>
+        <p>To get the code of this website visit my github page, I have uploaded all the content on github </p>
+
+        <p>Thanks for visiting</p>
+    </div>
+</main>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Cluster</h5>
+                <p class="grey-text text-lighten-4">Clone of craigslist website using django.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5>cluster.com</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="/">Home</a></li>
+                    <li><a class="grey-text text-lighten-3" href="{% url 'about' %}">About</a></li>
+                    <li><a class="grey-text text-lighten-3" href="{% url 'contact_us' %}">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © Cluster
+            <a class="grey-text text-lighten-5 right" href="https://www.instagram.com/shubham_waje_/">Click here to
+                visit my instagram page</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
